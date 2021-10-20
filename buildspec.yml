@@ -20,7 +20,7 @@ phases:
   build:
     commands: 
       # Use AWS SAM to package the application by using AWS CloudFormation
-      - sam package --s3-bucket codepipeline-pipelineartifactsbucket-1jcubegnpk650 --output-template-file target/packaged-template.yaml --template-file serverless.yml
+      - sam package --s3-bucket codepipeline-pipelineartifactsbucket-1jcubegnpk650 --output-template-file packaged-template.yaml --template-file serverless.yml
 artifacts:
   type: zip
   files:
